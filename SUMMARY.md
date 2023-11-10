@@ -7,5 +7,12 @@
 
 ## 嵌入式构建框架 <a href="#embedded-build-project" id="embedded-build-project"></a>
 
-* [🚘 Yocto学习专栏](embedded-build-project/yocto-xue-xi-zhuan-lan.md)
+* [🚘 Yocto学习专栏](embedded-build-project/yocto-xue-xi-zhuan-lan/README.md)
+  * [☝ Page 1 Yocto介绍及学习方法](embedded-build-project/yocto-xue-xi-zhuan-lan/page-1-yocto-jie-shao-ji-xue-xi-fang-fa.md)
+  * [✌ Page 2 Yocto构建流程](embedded-build-project/yocto-xue-xi-zhuan-lan/page-2-yocto-gou-jian-liu-cheng.md)
+  * [🖖 Page 3](embedded-build-project/yocto-xue-xi-zhuan-lan/page-3.md)
+  * [🖖 Page 4](embedded-build-project/yocto-xue-xi-zhuan-lan/page-4.md)
+  * [✋ Page 5](embedded-build-project/yocto-xue-xi-zhuan-lan/page-5.md)
+  * [🦄 Yocto升级交叉编译工具链gcc版本](embedded-build-project/yocto-xue-xi-zhuan-lan/yocto-sheng-ji-jiao-cha-bian-yi-gong-ju-lian-gcc-ban-ben.md)
+* [Page](embedded-build-project/page.md)
 * [🚲 Buildroot专栏](embedded-build-project/buildroot-zhuan-lan.md)
