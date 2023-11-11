@@ -12,3 +12,63 @@ description: 从零开始学习实操Yocto构建
 
 > [https://docs.yoctoproject.org/index.html](https://docs.yoctoproject.org/index.html)
 
+## 1. 准备工作
+
+选择Poky版本：
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+在开始构建嵌入式系统之前，需要进行一些准备工作。这包括安装Yocto构建环境、下载所需的软件包和组件，以及配置构建环境的相关设置。
+
+假设你已经拥有了一个Linux发行版，本文在书写时使用的为Windows自带虚拟机 Hyper-V。
+
+### 环境搭建
+
+```sh
+sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev python3-subunit mesa-common-dev zstd liblz4-tool file locales libacl1
+sudo locale-gen en_US.UTF-8
+```
+
+## 2. 创建构建目录
+
+Yocto提供了脚本oe-init-build-env来创建新的构建环境。该脚本设置构建环境的目录结构，并初始化配置文件。
+
+```
+source oe-init-build-env build
+```
+
+通过环境变量的声明，我们就创建好了我们我们的系统构建镜像文件及构建参数文件。
+
+## 3. 配置和定制
+
+其中的conf/local.conf文件，保存了定制你的嵌入式Linux的各个变量设置。对于我们的第一个Yocto项目，建议修改以下两个变量。
+
+* DL\_DIR：软件包下载的目录，默认的设置是在构建环境目录下的downloads目录，建议修改到构建环境以外的目录，这样，当你新建一个构建环境时，不用重复下载这些软件包。（Yocto项目构建的大部分时间都浪费在下载这些软件包上）
+* SSTATE\_DIR：共享的状态缓存文件目录，默认的设置是在构建环境目录下的sstate-cache目录，建议修改到构建环境以外的目录。因为在构建过程中，很多任务会产生大量的中间输出，而这些中间输出对将来其他的构建来说时可以重用的，这样可以大大加速构建过程。
+
+我们修改如下配置参数：
+
+```sh
+MACHINE ??= "qemuarm64"
+DL_DIR ?= "${TOPDIR}/downloads"
+```
+
+MACHINE对应的构建配方在Poky中可以找到：`meta/conf/machine/qemuarm64.conf`
+
+## 4. 构建和编译
+
+```
+bitbake core-image-minimal
+```
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Yocto首先会下载自己构建所需要的环境并进行安装
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+## 5. 镜像生成
+
+
+
+## 6. 测试和验证
