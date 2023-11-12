@@ -16,7 +16,7 @@ description: 从零开始学习实操Yocto构建
 
 选择Poky版本：
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 在开始构建嵌入式系统之前，需要进行一些准备工作。这包括安装Yocto构建环境、下载所需的软件包和组件，以及配置构建环境的相关设置。
 

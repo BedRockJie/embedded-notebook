@@ -12,7 +12,7 @@
   * [✌ Page 2 Yocto构建流程](embedded-build-project/yocto-xue-xi-zhuan-lan/page-2-yocto-gou-jian-liu-cheng.md)
   * [🖖 Page 2.5 Yocto概念介绍](embedded-build-project/yocto-xue-xi-zhuan-lan/page-2.5-yocto-gai-nian-jie-shao.md)
   * [🖖 Page 3 定制Yocto系统](embedded-build-project/yocto-xue-xi-zhuan-lan/page-3-ding-zhi-yocto-xi-tong.md)
-  * [✋ Page 4 添加包到镜像中](embedded-build-project/yocto-xue-xi-zhuan-lan/page-4-tian-jia-bao-dao-jing-xiang-zhong.md)
+  * [✋ Page 4 添加包到镜像中（开源包&自己的程序）](embedded-build-project/yocto-xue-xi-zhuan-lan/page-4-tian-jia-bao-dao-jing-xiang-zhong-kai-yuan-bao-zi-ji-de-cheng-xu.md)
   * [🦄 Yocto升级交叉编译工具链gcc版本](embedded-build-project/yocto-xue-xi-zhuan-lan/yocto-sheng-ji-jiao-cha-bian-yi-gong-ju-lian-gcc-ban-ben.md)
 * [Page](embedded-build-project/page.md)
 * [🚲 Buildroot专栏](embedded-build-project/buildroot-zhuan-lan.md)

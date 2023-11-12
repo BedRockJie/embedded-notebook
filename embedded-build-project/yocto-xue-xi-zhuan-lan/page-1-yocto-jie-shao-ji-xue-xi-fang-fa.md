@@ -71,7 +71,7 @@ Yocto是一个完全开源的项目，其源代码和文档都可以在公开的
 * AOSP是针对移动设备的嵌入式系统开发框架，主要用于构建Android操作系统。它提供了针对移动设备的特定功能和服务，如移动通信、多媒体、应用生态系统等。
 * Yocto相对于AOSP来说更加通用和灵活，适用于更广泛的嵌入式系统开发项目。而AOSP在移动设备领域具有专业性和特定功能的优势。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/企业微信截图_16991690369136.png" alt=""><figcaption></figcaption></figure>
 
