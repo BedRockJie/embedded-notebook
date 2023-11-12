@@ -55,7 +55,11 @@ DL_DIR ?= "${TOPDIR}/downloads"
 
 MACHINE对应的构建配方在Poky中可以找到：`meta/conf/machine/qemuarm64.conf`
 
+对应我们构建的系统是运行在qemuarm64上的系统，所以当前我们的系统只能通过qemu来运行，并不需要真实的单板硬件环境就可以跑起来了。
+
 ## 4. 构建和编译
+
+一旦配置和定制完成，就可以开始构建和编译嵌入式系统。Yocto使用BitBake工具来管理构建过程。BitBake根据配置文件和层的设置，自动化地下载、编译和构建所需的软件包和组件。这个过程可能需要一些时间，具体取决于系统的复杂性和硬件的性能。
 
 ```
 bitbake core-image-minimal
@@ -67,8 +71,33 @@ Yocto首先会下载自己构建所需要的环境并进行安装
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+编译结束后，我们的Linux镜像就生成了。
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 ## 5. 镜像生成
 
+我们生成的镜像在：yocto-poky/poky/build/tmp/deploy/images/qemuarm64 目录中，镜像文件如下：
 
+```
+文件系统镜像
+core-image-minimal-qemuarm64-20231111024701.rootfs.ext4
+内核镜像
+Image--5.15.124+git0+f484a7f175_f0e7afd594-r0-qemuarm64-20231111024701.bin
+```
+
+使用Qemu启动只需要有内核和文件系统即可，真实的单板系统还需要有bootrom和Uboot等引导程序。
 
 ## 6. 测试和验证
+
+我们可以启动qemu来验证我们的镜像程序：
+
+<pre><code><strong>默认以Xserver来运行
+</strong><strong>runqemu qemuarm64
+</strong><strong>在当前终端中运行
+</strong>runqemu qemuarm64 nographic
+</code></pre>
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+键盘上的Ctrl + a，然后再按下x键。可以停止qemu。
