@@ -182,6 +182,6 @@ FILES_${PN} = "${bindir}/"
 
 重新运行镜像。就可以看到我们添加在镜像中的文件信息了。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 至此，我们自定义发行版的第一阶段就完成了。

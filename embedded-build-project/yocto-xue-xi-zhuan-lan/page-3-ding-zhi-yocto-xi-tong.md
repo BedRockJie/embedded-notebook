@@ -8,7 +8,7 @@ description: 添加自己想添加的工具&软件包
 
 上篇文章说到，我们已经成功构建了一个可以在Qemu上运行的嵌入式Linux系统，其实定制自己的系统，就是将当前系统中的关键特征修改为具有“标识”意义的特征关键词，细心的朋友已经发现了，当前我们构建的系统是基于Poky来构建的，所以系统中的特定标识是Poky：
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Yocto给我们提供了明确的修改思路，我们集成自Yocto已有的发行版信息，近修改我们需要的信息即可。
 
@@ -99,7 +99,7 @@ yocto-check-layer meta-rockembedded
 
 
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以看到当前能够识别我们的层，但是我们的存还存在很多问题，需要添加在自测试时需要支持的用例。
 
@@ -109,7 +109,7 @@ yocto-check-layer meta-rockembedded
 bitbake example
 ```
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 修改发行版名称
 
@@ -174,7 +174,7 @@ DISTRO ?= "rockembedded"
 bitbake example
 ```
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 YP会自己删除原来已有的构建过程，并重新按照新的发行版开始构建。
 
