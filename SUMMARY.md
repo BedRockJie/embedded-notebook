@@ -15,5 +15,17 @@
   * [✋ Page 4 添加包到镜像中（开源包&自己的程序）](embedded-build-project/yocto-xue-xi-zhuan-lan/page-4-tian-jia-bao-dao-jing-xiang-zhong-kai-yuan-bao-zi-ji-de-cheng-xu.md)
   * [🤙 Page 5 修改源码包获取地址加速构建过程](embedded-build-project/yocto-xue-xi-zhuan-lan/page-5-xiu-gai-yuan-ma-bao-huo-qu-di-zhi-jia-su-gou-jian-guo-cheng.md)
   * [🦄 Yocto升级交叉编译工具链gcc版本](embedded-build-project/yocto-xue-xi-zhuan-lan/yocto-sheng-ji-jiao-cha-bian-yi-gong-ju-lian-gcc-ban-ben.md)
-* [Page](embedded-build-project/page.md)
 * [🚲 Buildroot专栏](embedded-build-project/buildroot-zhuan-lan.md)
+
+## RockChipSoc
+
+* [🔐 SecureBoot安全固件](rockchipsoc/secureboot-an-quan-gu-jian/README.md)
+  * [🔐 系统整体安全方案](rockchipsoc/secureboot-an-quan-gu-jian/xi-tong-zheng-ti-an-quan-fang-an.md)
+
+## EmbeddedARMPreview
+
+* [😁 嵌入式ARM技术整理](embeddedarmpreview/qian-ru-shi-arm-ji-shu-zheng-li.md)
+
+## 以太网 <a href="#ethernet" id="ethernet"></a>
+
+* [Page 1](ethernet/page-1.md)
