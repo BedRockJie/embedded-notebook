@@ -25,6 +25,7 @@
 ## EmbeddedARMPreview
 
 * [😁 嵌入式ARM技术整理](embeddedarmpreview/qian-ru-shi-arm-ji-shu-zheng-li.md)
+* [😎 嵌入式Linux开发工程师的开发环境](embeddedarmpreview/qian-ru-shi-linux-kai-fa-gong-cheng-shi-de-kai-fa-huan-jing.md)
 
 ## 以太网 <a href="#ethernet" id="ethernet"></a>
 
