@@ -15,6 +15,7 @@
   * [✋ Page 4 添加包到镜像中（开源包&自己的程序）](embedded-build-project/yocto-xue-xi-zhuan-lan/page-4-tian-jia-bao-dao-jing-xiang-zhong-kai-yuan-bao-zi-ji-de-cheng-xu.md)
   * [🤙 Page 5 修改源码包获取地址加速构建过程](embedded-build-project/yocto-xue-xi-zhuan-lan/page-5-xiu-gai-yuan-ma-bao-huo-qu-di-zhi-jia-su-gou-jian-guo-cheng.md)
   * [🦄 Yocto升级交叉编译工具链gcc版本](embedded-build-project/yocto-xue-xi-zhuan-lan/yocto-sheng-ji-jiao-cha-bian-yi-gong-ju-lian-gcc-ban-ben.md)
+  * [😃 Yocto常用操作](embedded-build-project/yocto-xue-xi-zhuan-lan/yocto-chang-yong-cao-zuo.md)
 * [🚲 Buildroot专栏](embedded-build-project/buildroot-zhuan-lan.md)
 
 ## RockChipSoc
