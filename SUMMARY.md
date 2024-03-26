@@ -22,6 +22,8 @@
 
 * [🔐 SecureBoot安全固件](rockchipsoc/secureboot-an-quan-gu-jian/README.md)
   * [🔐 系统整体安全方案](rockchipsoc/secureboot-an-quan-gu-jian/xi-tong-zheng-ti-an-quan-fang-an.md)
+* [😄 RKDC](rockchipsoc/rkdc/README.md)
+  * [2024](rockchipsoc/rkdc/2024.md)
 
 ## EmbeddedARMPreview
 

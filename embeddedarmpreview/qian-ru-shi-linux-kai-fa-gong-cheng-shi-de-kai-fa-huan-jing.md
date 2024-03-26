@@ -56,7 +56,7 @@ VScode必备插件：
 
 由于内核代码量相对比较大，且目录结构比较多，所以我们需要开启Vscode的目录及代码“黏附”功能，将目录结构、和函数声明，黏附在编辑器顶端。
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后就是使用Global 插件进行内核源码的索引，之后就可以快乐进行内核代码阅读和开发了。
 

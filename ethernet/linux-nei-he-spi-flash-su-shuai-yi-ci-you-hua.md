@@ -14,3 +14,13 @@ MTD主要就是为NorFlash和NandFlash设计的，其余像接口映射、RAM、
 
 Linux内核使用mtd 框架适配一个 FLASH 的步骤大致如下：
 
+
+
+
+
+## 主要优化点
+
+1、写时加速
+
+2、关闭SPI控制器休眠功能
+

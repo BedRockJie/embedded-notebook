@@ -2,7 +2,7 @@
 description: 从零开始学习实操Yocto构建
 ---
 
-# ✌ Page 2 Yocto构建流程
+# ✌️ Page 2 Yocto构建流程
 
 上文介绍了Yocto的背景及其为什么选择Yocto，本节我们就从零开始，基于Yocto官方的发行版。进行从零的构建。下面我们分步骤进行。 在此之前推荐大家先阅读一下我之前写的Linux系统的组件。了解一下嵌入式开发过程中常用的流程和嵌入式系统是由什么组成的。
 
@@ -16,7 +16,7 @@ description: 从零开始学习实操Yocto构建
 
 选择Poky版本：
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 在开始构建嵌入式系统之前，需要进行一些准备工作。这包括安装Yocto构建环境、下载所需的软件包和组件，以及配置构建环境的相关设置。
 
@@ -65,15 +65,15 @@ MACHINE对应的构建配方在Poky中可以找到：`meta/conf/machine/qemuarm6
 bitbake core-image-minimal
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Yocto首先会下载自己构建所需要的环境并进行安装
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 编译结束后，我们的Linux镜像就生成了。
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 5. 镜像生成
 
@@ -98,6 +98,6 @@ Image--5.15.124+git0+f484a7f175_f0e7afd594-r0-qemuarm64-20231111024701.bin
 </strong>runqemu qemuarm64 nographic
 </code></pre>
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 键盘上的Ctrl + a，然后再按下x键。可以停止qemu。

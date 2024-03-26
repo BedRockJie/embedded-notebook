@@ -43,15 +43,15 @@ IMAGE_INSTALL:append = " dropbear"
 
 构建测试：`bitbake rocklinuximage`
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以看到我们添加的包已经被正确识别并开始构建了。构建完成之后，我们跑一下，测试一下。
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以看到软件包已经被成功添加进来，并且运行成功了，我们测试一下功能。
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 添加自己的软件包
 
@@ -110,7 +110,7 @@ do_install () {
 
 开始编译：
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 现代cmake
 
@@ -141,7 +141,7 @@ S = "${WORKDIR}"
 
 开始编译：
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 文章开始我们添加了sh工具，我们现在可以将我们的生成物拷贝进系统中进行测试。我的生成物的目录在：
 
@@ -155,7 +155,7 @@ scp hello-cmake root@192.168.7.2:/home/root
 scp hello root@192.168.7.2:/home/root
 ```
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以看到我们的程序。运行并测试成功。
 
@@ -172,7 +172,7 @@ IMAGE_INSTALL:append = "\
 
 此时我们就发现了之前还没有注意到的几个问题.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 需要修改bb文件中添加对应文件跳过描述：
 
@@ -182,6 +182,6 @@ FILES_${PN} = "${bindir}/"
 
 重新运行镜像。就可以看到我们添加在镜像中的文件信息了。
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 至此，我们自定义发行版的第一阶段就完成了。

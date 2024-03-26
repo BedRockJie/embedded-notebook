@@ -32,7 +32,7 @@ Poky，参考嵌入式操作系统实际上是一个有效的构建示例，它�
 
 构建系统是使用 Poky 构建指令“文件”下载的，称为配方和层（定义如下）。您可以更改、复制、扩展或使用 Poky 构建细节，以创建自定义嵌入式 Linux。
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 模型：层模型（meta）
 
@@ -91,7 +91,7 @@ Yocto Project 有一个用于创建嵌入式 Linux 的开发模型，这使其�
    6. Install 安装 – 将文件复制到目标目录
    7. Package 软件包 – 用于安装的捆绑文件
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **知道您可以生成依赖项图并了解如何执行此操作：**依赖关系图显示配方、任务和目标之间的依赖关系。 您可以在 BitBake 中使用“-g”选项来生成此图形。当你 开始构建，构建中断，您可能会看到您不知道的包 关于或知道为什么构建系统包含它们。这 依赖关系图可以澄清这种混淆。您可以详细了解 依赖关系图以及如何生成它们，请参见 BitBake 用户手册的[“生成依赖关系图](https://docs.yoctoproject.org/bitbake/2.6/bitbake-user-manual/bitbake-user-manual-intro.html#generating-dependency-graphs)”部分。
 2.  **以下是在 tmp/work 中解码“magic”文件夹名称的方法：**生成系统提取、解压缩、预处理和生成。如果某事 出错时，构建系统会直接向您报告文件夹的路径 临时 （build/tmp） 文件和软件包所在的位置，由 建。有关此过程的详细示例，请参阅[示例](https://wiki.yoctoproject.org/wiki/Cookbook:Example:Adding\_packages\_to\_your\_OS\_image)。不幸的是，这个 示例位于 Yocto Project 的早期版本上。

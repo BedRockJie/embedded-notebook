@@ -12,7 +12,7 @@ description: 加速包的构建过程。
 
 首先我们使用这个命令：`bitbake -s | grep opencv` 来查找当前是否可以直接进行构建。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 可以发现当前我们这里支持的库会比较少，也没有这个库。原因是我们没有使用他自己的第三方库支持的meta层。这个层就是openembedded: [https://github.com/openembedded/meta-openembedded/tree/kirkstone](https://github.com/openembedded/meta-openembedded/tree/kirkstone)
 
@@ -38,7 +38,7 @@ BBLAYERS ?= " \
 
 我们经过查找可以找到我们需要的库的路径
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后我们将对应的层添加进来。暂时我们就添加这一个，其他的先不添加。
 
@@ -46,7 +46,7 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-openembedded\meta-oe
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 此时我们就可以找到我们需要添加的库。然后我们直接对该库提前编译，我们就会发现需要从Github上去获取Release的发布包，然而我们当前从Github上下载时的速率是比较慢的。
 
@@ -54,11 +54,11 @@ BBLAYERS ?= " \
 bitbake opencv
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 这个库的依赖会比较多，所有的应该都需要从零开始下载。然而我们可以看到他自己的下载进度是非常缓慢的。此时我们可以通过寻找镜像的方式来进行加速。
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以看到我们下载版的并不止Opencv一个库，还有它的依赖库。但是我们此时仅加速这一个库。
 
@@ -91,20 +91,20 @@ bitbake opencv
 
 根据描述将其中的关键词替换为：gitcode.net，这样我们就拥有了从镜像源中下载文件的能力。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们按下`CRTL + C`然后等待当前的任务执行完成之后就退出停止掉。对OpenCV库的同步过程。
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 此时我们的代码同步就会快很多。
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 加速了代码的同步过程，我们也就加速了整个构建过程。硬件我们解决不了，满足不了更快速的构建过程，我们就加速网络文件的获取。最后我们进入我们的build目录来验证一下我们的Opencv是否构建成功。
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以发现我们不论是库还是文件都已经构建成功。
