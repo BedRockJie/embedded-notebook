@@ -60,13 +60,44 @@ VScode必备插件：
 
 然后就是使用Global 插件进行内核源码的索引，之后就可以快乐进行内核代码阅读和开发了。
 
+
+
 ### 2. Yocto框架修改适配
 
+现在Yocto推出了自己的Vscode插件：
 
+语法高亮更为友好合理了；
+
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 ### 3.  Linux自动化脚本开发
 
+推荐两个VsCode插件：
 
+<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
+拥有这几个插件配合CodeGeex快速写验证脚本效率起飞。
 
 ### 4. Linux C/C++ 应用软件及服务开发
 
+个人习惯使用Cmake来进行构建框架管理，比较好支持跨平台构建。（但是跨平台学习成本较高）
+
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+## 5. AI 工具推荐
+
+一直在用的辅助开发工具（对于嵌入式场景适配可能不是很好）
+
+{% embed url="https://codegeex.cn/" %}
+
+但是对于Python、Shell、C等验证脚本来说完全够用了。
+
+## 总结
+
+对于我的开发环境，终端连接工具使用 Mobaxterm、编辑器使用 Vscode完全足够了。
+
+* 工具就是无休止的折腾，适合自己的才是最好的。
+
+希望友友们如有更好的解决自己痛点的工具可以评论哦，我会一直折腾的。
